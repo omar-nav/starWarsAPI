@@ -13,37 +13,34 @@
 </head>
 <body>
     <h1>Star Wars Character Search</h1>
-    <form>
+    <!-- <form > -->
         <div class="form-group">
             <label for="userInput">Character Number</label>
             <input type="number" class="form-control" id="characterNumber" placeholder="Luke Skywalker">
             <button id="submitButton" class="btn btn-dark">submit</button>
         </div>
-    </form>
+    <!-- </form> -->
     <table class="table table-dark">
         <thead>
             <tr>
               <th scope="col">name</th>
               <th scope="col">height</th>
               <th scope="col">mass</th>
-              <th scope="col">species</th>
+              <th scope="col">birth year</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+            <tr id ="result" hidden>
+                <td id="name"></td>
+                <td id="height"></td>
+                <td id="mass"></td>
+                <td id="birthYear"></td>
             </tr>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
           </tbody>
     </table>
+    <div id="error" hidden>
+        <p>bad input</p>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
